@@ -1,0 +1,48 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pages.master.cs" Inherits="GSSystem.Web.Pages" %>
+
+<html>
+<head>
+    <title>地源热泵信息系统</title>
+    <style>
+    #center {
+        height: 400px; 
+        width:30%;  
+        vertical-align: middle;
+    }
+</style>
+    <meta content="地源热泵信息系统.沈阳建筑大学电话：024-24690114" name="description" />
+    <meta content="沈阳建筑大学 地源热泵信息系统" name="keywords">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <link href="content/Css/index.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="Header" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 100%; text-align: left;">
+            <img src="/content/images/diyuan.jpg" height="93" width="100%" /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;        
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <table border="0" style="width: 100%; text-align: center">
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a href='#'>关于建筑大学</a></li>
+                            <li><a href="#">系统运行区间：建筑大学 </a></li>
+                            <li>&nbsp;<span lang="zh-cn"><a title="地址：沈阳市东陵区浑南东路9号" href="http://www.sjzu.edu.cn/">电话：024-24690114</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
+
